@@ -47,3 +47,9 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 -[] criar //passar argumentos
 -[] executar
 -[] arrow function / named function
+
+## estrtura de repetição 
+-[x]while
+
+## condicioal
+-[x]switch
