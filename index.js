@@ -1,11 +1,14 @@
 //arrays , objetos
-let metas={
-    value:"Ler um livro por mes",
-    checked: false,
-    log:(info)=>{
-        console.log(info)
+let meta={
+    value:'Ler um livro por mes',
+    checked: true,
     }
-}
-metas.value="Nao é para ler o livro mais"
-metas.log(metas.value)
-//function
+
+let metas=[
+    meta,
+    {
+        value: 'caminhar 20 minutos todos os dias',
+        checked: false
+    }
+]
+console.log(metas[1].value)
