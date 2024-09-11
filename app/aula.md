@@ -30,8 +30,9 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 -[x] boolean true, false
 
 ## Operadores
--[x] operadores de atribuição de valor =
--[x] operador de concatenação +
+-[x] operadores de atribuição de valor: =
+-[x] operador de concatenação: +
+-[x] operadores de comparação: ==  !=  <=  =>   < >
 
 ## estrutura de dados:
 
@@ -53,6 +54,7 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 
 ## condicioal
 -[x]switch
+-[x]if/else
 
 ## modulos em nodejs:
 - [x] importação de modulos(require, commonJs)
