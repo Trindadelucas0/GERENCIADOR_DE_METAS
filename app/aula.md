@@ -58,7 +58,7 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 
 ## modulos em nodejs:
 - [x] importação de modulos(require, commonJs)
-- []Biblioteca 'inquire' para criar prompts interativos
+- [x]Biblioteca 'inquire' para criar prompts interativos
 
 ## Programação assincrona e promises:
 -[x] Uso de funções e assincronas (async/await)
