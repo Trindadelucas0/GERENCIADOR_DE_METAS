@@ -11,8 +11,8 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 - [x]operadores ( atribuições, concatenação, matematicos, logicos)
 - [x]tipos de dados( string, number, boolean)
 - [x]estrutura de dados (functions, object, array)
-- []controle de fluxo (if/else)
-- []estrutura de repetição(for,while)
+- [x]controle de fluxo (if/else)
+- [x]estrutura de repetição(for,while)
 
 ## Fases da resolução de um problema
 
@@ -39,7 +39,7 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 
 ## arrays:
 -[x] Uma lista que contem qualquer tipo de dado
--[x] Metodos de array:push, [find, forEach,filter]:HOF (hider order functions)
+-[x] Metodos de array:push, [find, forEach,filter, map]:HOF (hider order functions)
 ## objetos
 -[x] Atributos e metodos
 -[x] Criação e manipulação
@@ -47,9 +47,9 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 
 
 ## functions
--[] Criar //passar argumentos
--[] Executar
--[] Arrow function / named function
+-[x] Criar //passar argumentos
+-[x] Executar
+-[x] Arrow function / named function
 
 ## estrtura de repetição 
 -[x]While
