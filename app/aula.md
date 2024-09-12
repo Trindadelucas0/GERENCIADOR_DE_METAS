@@ -1,4 +1,4 @@
-## linguagem de programação
+## Linguagem de programação
 
 maneira de dar instrução ao computador
 como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para resolver problemas.
@@ -6,8 +6,8 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 
 ## Peças de uma linguagem
 
-- [x]comentarios
-- [x]declarações de variaveis ( const, let)
+- [x]Comentarios
+- [x]Declarações de variaveis ( const, let)
 - [x]operadores ( atribuições, concatenação, matematicos, logicos)
 - [x]tipos de dados( string, number, boolean)
 - [x]estrutura de dados (functions, object, array)
@@ -30,34 +30,36 @@ como um lego, voce ira ultilizar peças para criar algoritimos, ou seja para res
 -[x] boolean true, false
 
 ## Operadores
--[x] operadores de atribuição de valor: =
--[x] operador de concatenação: +
--[x] operadores de comparação: ==  !=  <=  =>   < >
+-[x] Operadores de atribuição de valor: =
+-[x] Operador de concatenação: +
+-[x] Operadores de comparação: ==  !=  <=  =>   < > 
+-[x] spread operator: ...
 
 ## estrutura de dados:
 
 ## arrays:
--[x] uma lista que contem qualquer tipo de dado
+-[x] Uma lista que contem qualquer tipo de dado
+-[x] Metodos de array:push, [find, forEach,filter]:HOF (hider order functions)
 ## objetos
 -[x] Atributos e metodos
 -[x] Criação e manipulação
--[x]acesso a propriedades de objetos
+-[x]Acesso a propriedades de objetos
 
 
 ## functions
--[] criar //passar argumentos
--[] executar
--[] arrow function / named function
+-[] Criar //passar argumentos
+-[] Executar
+-[] Arrow function / named function
 
 ## estrtura de repetição 
--[x]while
+-[x]While
 
 ## condicioal
--[x]switch
+-[x]Switch
 -[x]if/else
 
 ## modulos em nodejs:
-- [x] importação de modulos(require, commonJs)
+- [x] Importação de modulos(require, commonJs)
 - [x]Biblioteca 'inquire' para criar prompts interativos
 
 ## Programação assincrona e promises:

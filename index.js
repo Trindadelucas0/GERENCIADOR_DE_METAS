@@ -1,6 +1,6 @@
 const { select, input, checkbox } = require("@inquirer/prompts");
 let meta = {
-  value: "tomar 3L de agua por dia",
+  value: "Tomar 3L de agua por dia",
   checked: false,
 };
 let metas = [meta];
@@ -21,16 +21,15 @@ const listarMetas = async () => {
     message:
       "Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o ENTER para finalizar essa etapa",
     choices: [...metas],
-    instructions:false,
+    instructions: false,
   }); //processar dados
   if (respostas.length == 0) {
     console.log("Nenhuma meta selecionada");
     return;
   }
-  metas.forEach((m)=>{
-    m.checked=false
-  })
-
+  metas.forEach((m) => {
+    m.checked = false;
+  });
 
   respostas.forEach((resposta) => {
     const meta = metas.find((m) => {
@@ -38,8 +37,23 @@ const listarMetas = async () => {
     });
     meta.checked = true;
   });
-  console.log("meta[s] marcadas como concluida[s]")
+  console.log("Meta[s] marcadas como concluida[s]");
 };
+
+const metasRealizadas= async()=>{
+    const realizadas = metas.filter((meta)=>{
+        return meta.checked
+    })
+    if (realizadas.length==0){
+        console.log("Não existem metas realizadas! :(")
+        return
+
+    }
+    await select({
+        message: "Metas realizadas",
+        choices: [...realizadas]
+    })
+}
 
 const start = async () => {
   //menu de aplicação
@@ -49,29 +63,34 @@ const start = async () => {
       message: "menu >",
       choices: [
         {
-          name: "cadastrar meta",
-          value: "cadastrar",
+          name: "Cadastrar Meta",
+          value: "Cadastrar",
         },
         {
-          name: "listar metas",
-          value: "listar",
+            name: "Listar Metas",
+            value: "Listar",
+          },
+        {
+          name: "Metas realizadas",
+          value: "realizadas",
         },
         {
-          name: "sair",
-          value: "sair",
+          name: "Sair",
+          value: "Sair",
         },
       ],
     });
     switch (opcao) {
-      case "cadastrar":
+      case "Cadastrar":
         await cadastrarMeta();
         console.log(metas);
         break;
-      case "listar":
+      case "Listar":
         await listarMetas();
-        break;
-      case "sair":
-        console.log("até a proxima");
+      case "realizadas":
+        await metasRealizadas()
+      case "Sair":
+        console.log("Até a proxima");
         return;
     }
   }
