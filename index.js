@@ -23,13 +23,14 @@ const listarMetas = async () => {
     choices: [...metas],
     instructions: false,
   }); //processar dados
+  metas.forEach((m) => {
+    m.checked = false;
+  });
+
   if (respostas.length == 0) {
     console.log("Nenhuma meta selecionada");
     return;
   }
-  metas.forEach((m) => {
-    m.checked = false;
-  });
 
   respostas.forEach((resposta) => {
     const meta = metas.find((m) => {
@@ -87,8 +88,10 @@ const start = async () => {
         break;
       case "Listar":
         await listarMetas();
+        break
       case "realizadas":
         await metasRealizadas()
+        break
       case "Sair":
         console.log("Até a proxima");
         return;
