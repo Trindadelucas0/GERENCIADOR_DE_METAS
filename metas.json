@@ -1,6 +1,10 @@
 [
   {
-    "value": "teste",
+    "value": "estudar javaScript",
     "checked": false
+  },
+  {
+    "value": "ARRUMAR MEU QUARTO",
+    "checked": true
   }
 ]
